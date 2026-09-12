@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulaire Officiel d'Excuses</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Script externe pour les confettis (gratuit et sécurisé) -->
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+</head>
+<body>
+
+    <!-- ÉTAPE 1 : Le faux chargement -->
+    <div id="loading-screen" class="screen">
+        <h2 id="loading-text">Démarrage du protocole de pardon d'Alice ta femme </h2>
+        <div class="loader"></div>
+    </div>
+
+    <!-- ÉTAPE 2 : Le rapport d'incident (NOUVELLE PAGE) -->
+    <div id="confession-screen" class="screen hidden">
+        <h1>Le rapport d'incident </h1>
+        <p>Avant de te demander quoi que ce soit, je veux te prouver que j'ai pris conscience de mes erreurs :</p>
+        
+        <!-- C'est ici que tu listes tes erreurs, avec tes propres mots -->
+        <ul class="bad-list">
+            <li><strong>J'ai merdé quand...</strong> j'ai douté de toi et de notre relation.</li>
+            <li><strong>J'ai eu tort de...</strong>mentir pour te faire du mal.</li>
+            <li><strong>Et surtout, je regrette de...</strong>avoir forcé pour qu'on est une conversation.</li>
+        </ul>
+
+        <p class="note">Pas d'excuses de ma part, pas de "oui mais". Juste moi qui assume.</p>
+
+        <button id="btn-next" class="btn-neutral">Passer à la suite ➔</button>
+    </div>
+
+    <!-- ÉTAPE 3 : Le message et l'image -->
+    <div id="message-screen" class="screen hidden">
+        <h1>Avis de demande de Pardon Officielle </h1>
+        
+        <!-- Ta photo apparaîtra ici -->
+        <img src="nous.jpg" alt="Photo de nous" class="cute-img">
+        
+        <p>Ce document certifie que <strong>Alice</strong> a pris conscience de son comportement désastreux envers <strong>Vae</strong>.</p>
+        
+        <div class="apology-box">
+            <p>"Je sais que j'ai dépassé les bornes. J'ai été bête, et tu mérites beaucoup mieux que ça. Je te présente mes excuses les plus sincères."</p>
+        </div>
+
+        <p class="question">Acceptes-tu ces excuses ?</p>
+        
+        <div class="buttons-container">
+            <button id="btn-yes" class="btn-success">Oui, je te pardonne </button>
+            <button id="btn-no" class="btn-danger">Non, tu m'as trop saoulée </button>
+        </div>
+    </div>
+
+    <!-- ÉTAPE 4 : L'écran de fin -->
+    <div id="success-screen" class="screen hidden">
+        <h1>MERCI ! 🎉</h1>
+        <p>Le pardon a été enregistré avec succès dans la base de données universelle.</p>
+        <p>promis, je ferai des efforts.</p>
+        <img src="https://media.giphy.com/media/MeIucAjPKoA120R7sN/giphy.gif" alt="Happy Dance" class="cute-img">
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
