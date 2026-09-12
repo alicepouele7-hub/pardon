@@ -1,15 +1,17 @@
 /* === STYLE GLOBAL === */
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: #ffe6f2; /* Un rose très pâle et doux */
+    background-color: #ffe6f2; 
     color: #2c3e50;
     margin: 0;
-    height: 100vh;
+    min-height: 100vh; /* Permet à la page de s'agrandir si besoin */
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
-    overflow: hidden; /* Empêche les barres de défilement quand le bouton fuit */
+    overflow-x: hidden; /* Bloque le scroll horizontal pour le bouton qui fuit */
+    overflow-y: auto; /* Autorise le défilement de haut en bas */
+    padding: 20px 0; /* Ajoute un peu d'espace pour pas que ça touche les bords */
 }
 
 /* === GESTION DES ÉCRANS === */
